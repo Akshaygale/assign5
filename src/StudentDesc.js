@@ -35,7 +35,7 @@ export default function StudentDesc() {
     }
     const handle = (e) => {
         if (name.Name ===''|| name.Age === ''|| name.Batch=== '' || name.Course === '') {
-            alert("pls fill the data")
+            alert("Please Enter Necessary Data")
         }
         else {
             
