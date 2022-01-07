@@ -3,7 +3,7 @@ import { useState, useContext } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { CreateContext } from './CreateContext'
 
-export default function Student_desc() {
+export default function StudentDesc() {
     const [name, setName] = useState({
         Id: '',
         Name: '',

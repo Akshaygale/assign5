@@ -3,7 +3,7 @@ import Student from './Student'
 import Contact from './Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
-import Student_desc from './Student_desc';
+import StudentDesc from './StudentDesc';
 import {Studentprovide} from './CreateContext'
 
 
@@ -18,8 +18,8 @@ function App() {
             <Route path='/home' element={<Home/>}/>
             <Route path='/student' element={<Student/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            <Route path='/student_desc' element={<Student_desc/>}>
-              <Route path=':id' element={<Student_desc/>}></Route>
+            <Route path='/studentDesc' element={<StudentDesc/>}>
+              <Route path=':id' element={<StudentDesc/>}></Route>
             </Route>
 
           </Routes>

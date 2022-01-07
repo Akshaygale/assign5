@@ -18,7 +18,7 @@ const [data] = useContext(CreateContext);
     const assignValue=useNavigate();
 
     const addstudent=()=>{
-        assignValue('/student_desc')
+        assignValue('/studentDesc')
     }
         return (
                 <div>
@@ -46,7 +46,7 @@ const [data] = useContext(CreateContext);
                                         <TableCell>{row.Age}</TableCell>
                                         <TableCell>{row.Course}</TableCell>
                                         <TableCell>{row.Batch}</TableCell>
-                                        <TableCell onClick={()=>assignValue(`/student_desc/${row.Id}`)}> <p className='changecolor' >Edit</p> </TableCell>
+                                        <TableCell onClick={()=>assignValue(`/studentDesc/${row.Id}`)}> <p className='changecolor' >Edit</p> </TableCell>
                                     </TableRow>
                                 ))}
                             </TableBody>
